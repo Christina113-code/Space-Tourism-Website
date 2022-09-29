@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Montserrat&family=Roboto&family=Space+Mono&display=swap');
+
+:root {
+	/* Color Variables */
+	--color-base: #0B0D17;
+	--color-primary: #fff;
+	--color-secondary: #D0D6F9;
+
+	/* Text Variables */
+	--font-main: 'Bellegair',sans-serif;
+	--font-secondary: 'Barlow Condensed',sans-serif;
+	--font-size-base: 1rem;
+	--line-height-base: 1.35;
+	--font-size-h1: 2rem;
+	--font-size-h2: 1.75rem;
+	--font-size-h3: 1.5rem;
+	--font-size-h4: 1.25rem;
+	--font-size-h5: var(--font-size-base);
+	--font-size-p: 0.75rem;
+
+	/* Transition Variables */
+	--timing: 0.4s;
+	--easing: ease-in-out;
+
+	/* Spacing between grid items */
+	--gap: 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+	font-family: var(--font-main);
+	font-size:var(--font-size-base);
+	line-height: var(--line-height-base);
+	background-color: var(--color-base);
+	color:var(--color-secondary);
+	min-width:100vw;
+	min-height:100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Font Styles */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
