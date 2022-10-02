@@ -1,0 +1,30 @@
+import React, { useState } from 'react'
+import content from '../assets/data.json';
+//testing to see that path exists. It does
+import moon from '../assets/destination/image-moon.png';
+import europa from '../assets/destination/image-europa.png';
+import mars from '../assets/destination/image-mars.png';
+import titan from '../assets/destination/image-titan.png';
+import Page from './Page';
+
+const DestinationsPage = () => {
+  const imgs = [moon, mars, europa, titan];
+  const [planetIndex, setPlanetIndex] = useState(0);
+  const switchPage = (i) =>{
+    setPlanetIndex(i);
+  }
+
+  
+  return (
+ 
+  <Page img = {imgs[planetIndex]} menu={<ul>
+    <li onClick={()=>switchPage(0)}>0</li>
+    <li onClick={()=>switchPage(1)}>0</li>
+    <li onClick={()=>switchPage(2)}>0</li>
+    <li onClick={()=>switchPage(3)}>0</li>
+  </ul>} header = {<h1><span>01</span> Pick your destination</h1>}subtitle= {content.destinations[planetIndex].role} title={content.destinations[planetIndex].name} description={content.destinations[planetIndex].description} />
+
+  )
+}
+
+export default DestinationsPage
