@@ -7,16 +7,19 @@ module.exports = {
   './src/**/*.{html,js}',],
   theme: {
     extend:{
-      black: '#0B0D17',
-      gray:'#383B4B',
-      'light-gray': '#D0D6F9',
-      
+      colors:{
+        black: '#0B0D17',
+        'gray':'rgba(255, 255, 255, 0.04)',
+         'light-gray': '#D0D6F9',
+      },
+     
+      fontFamily: {
+        'barlow':['Barlow', 'sans-serif'],
+        'bellefair':['Bellefair','sans-serif'],
+        'condensed':['Barlow Condensed','sans-serif'],
+      }
     },
-    fontFamily: {
-      'barlow':['Barlow', 'sans-serif'],
-      'bellefair':['Bellefair','sans-serif'],
-      'condensed':['Barlow Condensed','sans-serif'],
-    }
+   
   },
   plugins: [],
 }

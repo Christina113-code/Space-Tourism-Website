@@ -26,30 +26,30 @@ const Navbar = () => {
 
   return (
     <Router>
-      <nav className="bg-black flex items-center justify-between w-screen py-1 px-7">
-        <NavLink exact to="/">
-          {" "}
-          <img src={logo} alt="logo" className="w-10" />
+      <nav className="bg-black items-center flex md:items-stretch md:p-0 justify-between w-screen py-4 px-7 ">
+        <NavLink exact to="/" className="md:p-4">
+          
+          <img src={logo} alt="logo" className="w-10 " />
         </NavLink>
-        <ul className="bg-gray md:block">
-          <li className={`navbar__list__link`}>
-            <NavLink exact to="/">
-              <span>00</span>Home
+        <ul className="md:bg-gray hidden md:flex md:w-3/5  md:justify-center">
+          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
+            <NavLink exact to="/" className={"w-full"}>
+              <span className="hidden lg:inline-block px-3 font-condensed font-semibold">00</span>Home
             </NavLink>
           </li>
-          <li className={`navbar__list__link`}>
+          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
             <NavLink to="/destinations">
-              <span>01</span>Destinations
+              <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">01</span>Destinations
             </NavLink>
           </li>
-          <li className={`navbar__list__link`}>
+          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
             <NavLink to="/crew">
-              <span>02</span>Crew
+              <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">02</span>Crew
             </NavLink>
           </li>
-          <li className={`navbar__list__link`}>
+          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
             <NavLink to="/technology">
-              <span>03</span>Technology
+              <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">03</span>Technology
             </NavLink>
           </li>
         </ul>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 onClick={toggleSideBar}
               />
               <li
-                className="pt-[7rem] py-8 px-8 font-condensed text-white text-base leading-5 tracking-widest"
+                className="pt-[7rem] py-8 font-condensed uppercase text-white text-base leading-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/">
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li
-                className="py-8 px-8 font-condensed text-white text-base leading-5 tracking-widest"
+                className="py-8  font-condensed uppercase text-white text-base leading-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/destinations">
@@ -80,7 +80,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li
-                className="py-8 px-8 font-condensed text-white text-base leading-5 tracking-widest"
+                className="py-8  font-condensed uppercase text-white text-base leading-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/crew">
@@ -88,7 +88,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li
-                className="py-8 px-8 font-condensed text-white text-base leading-5 tracking-widest"
+                className="py-8  font-condensed uppercase text-white text-base leading-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/technology">
@@ -102,7 +102,7 @@ const Navbar = () => {
           <img
             src={hamburger}
             alt="hamburger"
-            className="w-7 h-5 cursor-pointer"
+            className="w-7 h-5 cursor-pointer md:hidden lg:hidden"
             onClick={toggleSideBar}
           />
         )}
