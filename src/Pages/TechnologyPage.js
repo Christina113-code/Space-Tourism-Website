@@ -12,11 +12,11 @@ const TechnologyPage = () => {
     settechIndex(i);
   }
   return (
-  <Page img = {imgs[techIndex]} menu={<ul>
-    <li onClick={()=>switchPage(0)}>0</li>
-    <li onClick={()=>switchPage(1)}>0</li>
-    <li onClick={()=>switchPage(2)}>0</li>
-  </ul>} header = {<h1><span>03</span> Space Launch 101</h1>}subtitle= {content.destinations[techIndex].role} title={content.destinations[techIndex].name} description={content.destinations[techIndex].description} />
+  <Page img = {imgs[techIndex]} page='tech' menu={<ul className="flex gap-4 items-center justify-center">
+    <li className = "font-bellefair w-10 h-10 rounded-full border-light-gray/30 border-2 text-white active:text-black active:bg-white focus:bg-white focus:text-black hover:bg-white hover:text-black flex items-center justify-center leading-none"onClick={()=>switchPage(0)}>1</li>
+    <li className = "font-bellefair w-10 h-10 rounded-full border-light-gray/30 border-2 text-white active:text-black active:bg-white focus:bg-white focus:text-black hover:bg-white hover:text-black flex items-center justify-center leading-none "onClick={()=>switchPage(1)}>2</li>
+    <li className = "font-bellefair w-10 h-10 rounded-full border-light-gray/30 border-2 text-white active:text-black active:bg-white focus:bg-white focus:text-black hover:bg-white hover:text-black flex items-center justify-center leading-none"onClick={()=>switchPage(2)}>3</li>
+  </ul>} subtitle = {<h2 className="uppercase tracking-widest font-condensed text-light-gray text-center">The terminology...</h2>}header = {<h1><span className="text-light-gray/30  font-semibold px-2">03</span> Space Launch 101</h1>} title={<h1 className="text-2xl">{content.technology[techIndex].name}</h1>} description={content.technology[techIndex].description} />
 
   );
 };

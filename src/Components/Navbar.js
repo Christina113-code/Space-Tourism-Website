@@ -32,30 +32,30 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-10 " />
         </NavLink>
         <ul className="md:bg-gray hidden md:flex md:w-3/5  md:justify-center">
-          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
+          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink exact to="/" className={"w-full"}>
               <span className="hidden lg:inline-block px-3 font-condensed font-semibold">00</span>Home
             </NavLink>
           </li>
-          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
+          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink to="/destinations">
               <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">01</span>Destinations
             </NavLink>
           </li>
-          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
+          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink to="/crew">
               <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">02</span>Crew
             </NavLink>
           </li>
-          <li className={`text-white px-8  font-condensed leading-wider flex items-center uppercase`}>
+          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink to="/technology">
               <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">03</span>Technology
             </NavLink>
           </li>
         </ul>
         {sidebar ? (
-          <div className="sidenav-container">
-            <ul className=" bg-indigo-500  h-screen absolute inset-y-0 right-0 w-56">
+          <div className="sidenav-container | ease-in-out">
+            <ul className=" bg-white/5 backdrop-blur-2xl  h-screen absolute inset-y-0 right-0 w-56">
               <img
                 src={close}
                 alt="close icon"
@@ -63,7 +63,7 @@ const Navbar = () => {
                 onClick={toggleSideBar}
               />
               <li
-                className="pt-[7rem] py-8 font-condensed uppercase text-white text-base leading-5 tracking-widest"
+                className="px-8 pt-[7rem] py-8 font-condensed uppercase text-white text-base tracking-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/">
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li
-                className="py-8  font-condensed uppercase text-white text-base leading-5 tracking-widest"
+                className="py-8 px-8 font-condensed uppercase text-white text-base tracking-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/destinations">
@@ -80,7 +80,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li
-                className="py-8  font-condensed uppercase text-white text-base leading-5 tracking-widest"
+                className="py-8 px-8 font-condensed uppercase text-white text-base tracking-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/crew">
@@ -88,7 +88,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li
-                className="py-8  font-condensed uppercase text-white text-base leading-5 tracking-widest"
+                className="py-8 px-8 font-condensed uppercase text-white text-base tracking-5 tracking-widest"
                 onClick={toggleSideBar}
               >
                 <NavLink to="/technology">
