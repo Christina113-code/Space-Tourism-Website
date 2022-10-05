@@ -31,23 +31,23 @@ const Navbar = () => {
           
           <img src={logo} alt="logo" className="w-10 " />
         </NavLink>
-        <ul className="md:bg-gray hidden md:flex md:w-3/5  md:justify-center">
-          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
+        <ul className="md:bg-gray/10 hidden md:flex md:w-3/5  md:justify-center">
+          <li className={`text-white px-5  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink exact to="/" className={"w-full"}>
               <span className="hidden lg:inline-block px-3 font-condensed font-semibold">00</span>Home
             </NavLink>
           </li>
-          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
+          <li className={`text-white px-5  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink to="/destinations">
               <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">01</span>Destinations
             </NavLink>
           </li>
-          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
+          <li className={`text-white px-5  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink to="/crew">
               <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">02</span>Crew
             </NavLink>
           </li>
-          <li className={`text-white px-8  font-condensed tracking-widest flex items-center uppercase`}>
+          <li className={`text-white px-5  font-condensed tracking-widest flex items-center uppercase`}>
             <NavLink to="/technology">
               <span className="hidden  lg:inline-block px-3 font-condensed font-semibold">03</span>Technology
             </NavLink>

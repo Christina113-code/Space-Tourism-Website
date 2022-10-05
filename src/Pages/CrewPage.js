@@ -33,7 +33,7 @@ const CrewPage = () => {
         </h1>
       }
       subtitle={content.crew[memberIndex].role}
-      title={<h1 className="text-2xl">{content.crew[memberIndex].name}</h1>}
+      title={<h1 className="text-2xl md:text-4xl">{content.crew[memberIndex].name}</h1>}
       description={content.crew[memberIndex].bio}
     />
   );

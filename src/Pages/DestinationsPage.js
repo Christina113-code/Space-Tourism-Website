@@ -54,8 +54,7 @@ const DestinationsPage = () => {
         </h1>
       }
       page = 'destination'
-      subtitle={content.destinations[planetIndex].role}
-      title={<p className="text-6xl">{content.destinations[planetIndex].name}</p>}
+      title={content.destinations[planetIndex].name}
       description={content.destinations[planetIndex].description}
       time = {content.destinations[planetIndex].travel}
       dist = {content.destinations[planetIndex].distance}

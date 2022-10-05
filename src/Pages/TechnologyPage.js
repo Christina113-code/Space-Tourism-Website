@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import content from '../assets/data.json';
-import launch from '../assets/technology/image-launch-vehicle-portrait.jpg';
-import port from '../assets/technology/image-spaceport-portrait.jpg';
-import capsule from '../assets/technology/image-space-capsule-portrait.jpg';
+import portrait_launch from '../assets/technology/image-launch-vehicle-portrait.jpg';
+import portrait_port from '../assets/technology/image-spaceport-portrait.jpg';
+import portrait_capsule from '../assets/technology/image-space-capsule-portrait.jpg';
+import landscape_launch from '../assets/technology/image-launch-vehicle-landscape.jpg';
+import landscape_port from '../assets/technology/image-spaceport-landscape.jpg';
+import landscape_capsule from '../assets/technology/image-space-capsule-landscape.jpg';
 import Page from "./Page";
 
 const TechnologyPage = () => {
-  const imgs = [launch, port, capsule];
+  const imgs = [portrait_launch,portrait_port,portrait_capsule];
+  const wide_imgs = [landscape_launch,landscape_port, landscape_capsule];
   const [techIndex, settechIndex] =useState(0);
   const switchPage = (i) =>{
     settechIndex(i);
   }
   return (
-  <Page img = {imgs[techIndex]} page='tech' menu={<ul className="flex gap-4 items-center justify-center">
+  <Page page='tech' img={imgs[techIndex]} img_wide = {wide_imgs[techIndex]} menu={<ul className="flex gap-4 items-center justify-center">
     <li className = "font-bellefair w-10 h-10 rounded-full border-light-gray/30 border-2 text-white active:text-black active:bg-white focus:bg-white focus:text-black hover:bg-white hover:text-black flex items-center justify-center leading-none"onClick={()=>switchPage(0)}>1</li>
     <li className = "font-bellefair w-10 h-10 rounded-full border-light-gray/30 border-2 text-white active:text-black active:bg-white focus:bg-white focus:text-black hover:bg-white hover:text-black flex items-center justify-center leading-none "onClick={()=>switchPage(1)}>2</li>
     <li className = "font-bellefair w-10 h-10 rounded-full border-light-gray/30 border-2 text-white active:text-black active:bg-white focus:bg-white focus:text-black hover:bg-white hover:text-black flex items-center justify-center leading-none"onClick={()=>switchPage(2)}>3</li>
