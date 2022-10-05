@@ -20,25 +20,25 @@ const DestinationsPage = () => {
       menu={
         <ul className="flex items-center justify-center">
           <li
-            className=" uppercase font-condensed tracking-widest text-sm text-light-gray px-3"
+            className=" uppercase font-condensed tracking-widest text-sm text-light-gray px-3 cursor-pointer hover:border-b-2 border-light-gray/50 py-4"
             onClick={() => switchPage(0)}
           >
             Moon
           </li>
           <li
-            className="uppercase font-condensed tracking-widest text-sm text-light-gray px-3"
+            className="uppercase font-condensed tracking-widest text-sm text-light-gray px-3 cursor-pointer hover:border-b-2 border-light-gray/50 py-4"
             onClick={() => switchPage(1)}
           >
             Mars
           </li>
           <li
-            className="uppercase font-condensed tracking-widest text-sm text-light-gray px-3"
+            className="uppercase font-condensed tracking-widest text-sm text-light-gray px-3 cursor-pointer hover:border-b-2 border-light-gray/50 py-4"
             onClick={() => switchPage(2)}
           >
             Europea
           </li>
           <li
-            className="uppercase font-condensed tracking-widest text-sm text-light-gray px-3"
+            className="uppercase font-condensed tracking-widest text-sm text-light-gray px-3 cursor-pointer hover:border-b-2 border-light-gray/50 py-4"
             onClick={() => switchPage(3)}
           >
             Titan

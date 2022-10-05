@@ -20,10 +20,10 @@ const CrewPage = () => {
       img={imgs[memberIndex]}
       menu={
         <ul className="flex gap-4 items-center justify-center" >
-          <li className = "bg-light-gray/30 rounded-full w-2.5 h-2.5 active:bg-white focus:bg-white hover:bg-white" onClick={() => switchPage(0)}></li>
-          <li className = "bg-light-gray/30 rounded-full w-2.5 h-2.5 active:bg-white focus:bg-white hover:bg-white" onClick={() => switchPage(1)}></li>
-          <li className = "bg-light-gray/30 rounded-full w-2.5 h-2.5 active:bg-white focus:bg-white hover:bg-white" onClick={() => switchPage(2)}></li>
-          <li className = "bg-light-gray/30 rounded-full w-2.5 h-2.5 active:bg-white focus:bg-white hover:bg-white" onClick={() => switchPage(3)}></li>
+          <li className = "bg-light-gray/30 cursor-pointer rounded-full w-2.5 h-2.5 active:bg-light-gray focus:bg-light-gray hover:bg-light-gray" onClick={() => switchPage(0)}></li>
+          <li className = "bg-light-gray/30 cursor-pointer rounded-full w-2.5 h-2.5 active:bg-light-gray focus:bg-light-gray hover:bg-light-gray" onClick={() => switchPage(1)}></li>
+          <li className = "bg-light-gray/30 cursor-pointer rounded-full w-2.5 h-2.5 active:bg-light-gray focus:bg-light-gray hover:bg-light-gray" onClick={() => switchPage(2)}></li>
+          <li className = "bg-light-gray/30 cursor-pointer rounded-full w-2.5 h-2.5 active:bg-light-gray focus:bg-light-gray hover:bg-light-gray" onClick={() => switchPage(3)}></li>
         </ul>
       }
       header={
