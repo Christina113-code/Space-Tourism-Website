@@ -92,7 +92,7 @@ const Page = ({
 
         {page === "homepage" ? (
          
-            <a href="/destinations"className="circle | h-36 w-36 bg-white rounded-full flex items-center justify-center mt-16 mx-auto md:w-60 md:h-60 md:mt-12 hover:after:w-60 hover:after:h-60 hover:after:bg-light-gray/30 cursor-pointer ">
+            <a href="/destinations"className="circle | h-36 w-36 bg-white rounded-full flex items-center justify-center mt-16 mx-auto md:w-60 md:h-60 md:mt-12 cursor-pointer ">
             <p className="uppercase font-bellefair text-lg md:text-3xl">
               Explore
             </p>
